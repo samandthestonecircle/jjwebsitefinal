@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonatan Jansson</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="vid2_2.mp4" type="video/mp4">
+      </video>
+
+<div class="social-bar">
+    <a href="mailto:jjnexusaudio@gmail.com"><img src="mail.png" id="mail" class="social-icon"></a>
+    <a href="https://bsky.app/profile/jjnexus.bsky.social" target="_blank"> <img src="Bluesky_Logo.png" id="bluesky" class="social-icon"></a>
+    <a href="https://www.instagram.com/jjnexus/" target="_blank"><img src="instagram.png" id="instagram" class="social-icon"></a>
+    <a href="https://www.linkedin.com/in/jjnexusaudio/" target="_blank"> <img src="linkedin.png" id="linkedin" class="social-icon"></a>
+   
+
+    
+</div>
+
+<div id="header">
+
+    <div id="page-title" onmouseover="hideAllMenus()" onclick="homePage()" style="cursor:pointer">       
+        <h1>JONATAN JANSSON</h1>
+    </div>
+
+    <!-- FULLSCREEN MENU -->
+
+    <div id="menu-fullscreen">
+
+        <div id="top-menu-container">
+
+            <div id="top-menu-item-l" onmouseover= "showSoundDesignMenu()" style="cursor:pointer">
+
+                <h2>Sound Designer</h2>
+
+            </div>
+
+            <div id="top-menu-item-r" onmouseover= "showAudioEngineerMenu()" style="cursor:pointer">
+
+                <h3>Audio Engineer</h3>
+
+            </div>
+
+        </div>
+
+        <div id="sub-menu-container">
+
+            <div id="sub-menu-left">
+
+                <div class="sub-menu-item-l">
+                    <h4 onclick="sdPortfolio()" style="cursor:pointer">Portfolio</h4>
+                </div>
+
+                <div class="sub-menu-item-l">
+                    <h4 onclick="sdServices()" style="cursor:pointer">Services</h4>
+                </div>
+
+                <div class="sub-menu-item-l">
+                    <h4 onclick="sdAbout()" style="cursor:pointer">About</h4>
+                </div>
+
+            </div>
+
+
+            <div id="sub-menu-right">
+
+                <div class="sub-menu-item-r">
+                    <h5 onclick="aeDiscography()" style="cursor:pointer">Discography</h5>
+                </div>
+
+                <div class="sub-menu-item-r">
+                    <h5 onclick="aeServices()" style="cursor:pointer">Services</h5>
+                </div>
+
+                <div class="sub-menu-item-r">
+                    <h5 onclick="aeAbout()" style="cursor:pointer">About</h5>
+                </div>
+
+            </div>    
+
+        </div>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+
+    <div id="menu-mobile">
+
+        <div id="top-menu-container-mobile">
+
+            <div id="top-menu-item-mobile">
+                <h2 onclick="sdDropdown()" style="cursor:pointer">Sound Designer</h2>
+            </div>
+
+                <div id="sub-menu-mobile-s" class="sdDropdown">
+
+                    <div class="sub-menu-item-mobile-s">
+                        <h4 onclick="sdPortfolio()" style="cursor:pointer">Portfolio</h4>
+                    </div>
+
+                    <div class="sub-menu-item-mobile-s">
+                        <h4 onclick="sdServices()" style="cursor:pointer">Services</h4>
+                    </div>
+
+                    <div class="sub-menu-item-mobile-s">
+                        <h4 onclick="sdAbout()" style="cursor:pointer">About</h4>
+                    </div>
+
+                </div>
+
+
+            <div id="top-menu-item-mobile">
+                <h3 onclick="aeDropdown()" style="cursor:pointer">Audio Engineer</h3>
+            </div>
+
+                <div id="sub-menu-mobile-a" class="aeDropdown">
+
+                        <div class="sub-menu-item-mobile-a">
+                            <h5 onclick="aeDiscography()" style="cursor:pointer">Discography</h5>
+                        </div>
+
+                        <div class="sub-menu-item-mobile-a">
+                            <h5 onclick="aeServices()" style="cursor:pointer">Services</h5>
+                        </div>
+
+                        <div class="sub-menu-item-mobile-a">
+                            <h5 onclick="aeAbout()" style="cursor:pointer">About</h5>
+                        </div>
+
+                </div>
+
+        </div>
+        
+
+    </div>
+
+</div>
+
+
+
+<div id="main">
+
+<!-- LANDING PAGE -->
+
+   <br><br>
+
+<div id="landing-page" onmouseover="rainbowAnim()" onmouseout="stopRainbow()">
+
+    <div class="intro-item">
+        <img id="intro-pic" src="jj-cropped-1.jpg">
+    </div>
+
+    <div class="intro-item">
+       
+        <br>
+        <h3>Hey, thanks for stopping by!&nbsp;<img src="rainbow-4.png" id="rainbow"></h3><br>
+        <p>
+            I’m Jonatan, a Brighton-based audio engineer, producer, and sound designer.<br><br>
+            
+            Whether you’re an artist, producer, recording studio, indie studio, or games company, I’d love to work with you! I specialize in engineering, the technical aspects of music production as well as full pipeline video game audio.<br><br>
+            
+            I’m always on the lookout for new and exciting projects. Feel free to reach out and say hello! <br><br>
+
+            
+
+            <SCRIPT TYPE="text/javascript">
+
+            emailE = 'gmail.com'
+
+            emailE = ('jjnexusaudio' + '@' + emailE)
+
+            document.write('✉ <i><A href="mailto:' + emailE + '">' + emailE + '</a></i>')
+
+            </script>
+            <br>
+            
+    </div>
+</div>
+
+  
+
+<!-- SD PORTFOLIO -->
+
+    <div id="sd-portfolio">
+
+        <div class="portfolio-area">
+        <div id="showreel-container">
+            <iframe id="sd-showreel-video" src="https://www.youtube.com/embed/vc9gBQABccw?si=jP-nlWUdAGTonJSP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </div>
+
+    <div class="portfolio-area" onmouseover="showIcon('gamepad')" onmouseout="hideIcon('gamepad')">
+
+        <div class="sd-portfolio-title">
+        <h2>RECENT PROJECTS <img src="gamepad3.png" id="gamepad"></h2>
+        </div>
+
+            <div class="portfolio-tile-container">
+
+                <div class="portfolio-tile-item">
+                    <iframe class="portfolio-tile-video" src="https://www.youtube.com/embed/jJUSCsum4d4?si=uaO8bJlUgTMHlRqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>         
+                </div>     
+                
+                <div class="portfolio-tile-item">
+                    <h2 >Aphantasia </h2><br>
+                        <p><i>VIDEO GAME DEMO</i><br><br>
+                        This is an original, audio-only game concept, made as part of my bachelor's dissertation. Gameplay was constructed in Unity and audio was implemented through FMOD.<br>
+                        Voice-over performed by Karis Taylor.</p><br>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="portfolio-area" onmouseover="showIcon('headphones')" onmouseout="hideIcon('headphones')">
+
+        <div class="sd-portfolio-title">
+        <h2>VIDEO GAME REDESIGNS <img src="headphones.png" id="headphones"></h2><br>
+        <p>Gameplay clips with completely re-designed audio. All included audio is new and redesigned by me.</p><br>
+        </div>
+        
+            <div class="portfolio-tile-container">
+
+                <div class="portfolio-tile-item">
+                    <iframe class="portfolio-tile-video" src="https://www.youtube.com/embed/P-q6Q-Ek3X4?si=Zl4ihjJlgKx3d04f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>         
+                </div>     
+                
+            </div>       
+        </div>
+
+        <div class="portfolio-area" onmouseover="showIcon('clapper')" onmouseout="hideIcon('clapper')">
+
+        <div class="sd-portfolio-title">
+        <h2>CINEMATIC REDESIGNS <img src="clapper.png" id="clapper"></h2><br>
+        <p>Various cinematics with completely re-designed audio. All included audio is new and redesigned by me.</p><br>
+        </div>
+
+        <div class="portfolio-tile-container">
+
+                <div class="portfolio-tile-item">
+                    <iframe class="portfolio-tile-video" src="https://www.youtube.com/embed/3pXglqvz4to?si=uB_B-sgvcR2rQLyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>     
+
+                <div class="portfolio-tile-item">
+                <iframe class="portfolio-tile-video" src="https://www.youtube.com/embed/Keb7hSzl2ug?si=5ujFJq08n-uNzeby" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>       
+                </div>     
+
+                            
+            </div>
+
+            <div class="portfolio-tile-container">
+
+                <div class="portfolio-tile-item">
+                <iframe class="portfolio-tile-video" src="https://www.youtube.com/embed/arYyGK8wBhY?si=CbKH9A8ykCQaHb0N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>     
+
+                
+
+                            
+            </div>
+
+            </div>
+
+
+
+
+
+
+        
+    </div>
+
+<!-- SD SERVICES -->
+
+    <div id="sd-services">
+
+        <div class="sd-services-tile" id="sound-design" onmouseover="startAnimation('fire-sprite')" onmouseout="stopAnimation('fire-sprite')">
+
+            <h2><img src="fire-sprite.png" id="fire-sprite" class="sd-sprite"> Sound Design</h2><br>
+            <p>Designing audio assets for interactive audio is a very involved process that can be done in several different ways. I use everything from synthesis to Foley performance and field recording to achieve the aesthetic vision required for any project. Be it stylised 8-bit synth patches or precise recordings, I have the tools and contacts needed for any design challenge.</p>
+
+        </div>
+
+        <div class="sd-services-tile" id="implementation" onmouseover="startAnimation('button-sprite')" onmouseout="stopAnimation('button-sprite')">
+
+            <h2><img src="button-sprite.png" id="button-sprite" class="sd-sprite"> Implementation</h2><br>
+            <p>With so many tools, engines and languages available to us, audio implementation can often be a confusing process. I’m very confident in using most game engines on the market with any audio middleware in order to design systems and implement audio assets. I have a strong grasp of blueprints and MetaSounds, as well as a basic grasp of C# and C++, allowing me to work with programmers to design bespoke solutions for your project.</p>
+
+
+        </div>
+
+        <div class="sd-services-tile" id="sound-design" onmouseover="startAnimation('plant-sprite')" onmouseout="stopAnimation('plant-sprite')">
+
+            <h2><img src="plant-sprite.png" id="plant-sprite" class="sd-sprite"> Field Recording</h2><br>
+            <p>In order to make your game stand out, using library assets is usually not good enough. I have been gathering personal recordings for years, and I’m always happy to go out and create and manage a custom library for your project.</p>
+
+        </div>
+        
+    </div>
+
+<!-- SD ABOUT -->
+
+    <div id="sd-about">
+
+        <div class="intro-item">
+        <img id="intro-pic" src="jj-cropped-1.jpg">
+        </div>
+
+        <div class="intro-item">
+        
+            <p><br>
+                I have a deep-rooted passion for video game audio stemming from a lifelong obsession with games and an extensive background in technical audio.<br><br>
+
+                My expertise covers the full game audio pipeline from recording, design, and composition to implementation, editing, and mixing. Working from my personal studio, I have all the tools necessary to record, design, and implement any type of audio in any engine.<br><br>
+
+                Video game audio is an ever-evolving art form. I firmly believe that a broad fundamental grasp of as many tools, methodologies, and aspects of video game design as possible is the key to true creative freedom. I am very passionate about video game audio and game production in general. Regardless of your budget and audio needs, I’d love to know more about your game!<br><br>
+            </p>
+                
+        </div>
+        
+    </div>
+
+<!-- AE DISCOGRAPHY -->
+
+    <div id="ae-discography">
+
+        <div class="ae-discography-container">
+
+            <div class="audio-engineer-tile">
+                <div class="ae-cover-art" onmouseover="showCredit('jbl-storybook')" onmouseout="hideCredit('jbl-storybook')" >
+                    <a href="https://tidal.com/browse/album/319190175/u" target="_blank"><img id="storybook" src="storybook.jpg"></a>
+                </div>
+
+                <div class="ae-credits-text" id="jbl-storybook">
+                    <h5>JACK BREEZE-LAMB <br>
+                        Storybook</h5><br>
+                    <p>Mixed and Mastered</p><br>
+                </div>
+            </div>
+
+            <div class="audio-engineer-tile">
+                <div class="ae-cover-art" onmouseover="showCredit('StUnreal')" onmouseout="hideCredit('StUnreal')" >
+                    <a href="https://tidal.com/browse/album/256037969/u" target="_blank"><img id="unreal" src="unreal.jpg"></a>
+                </div>
+
+                <div class="ae-credits-text" id="StUnreal">
+                    <h5>SYMPHA TREE <br>
+                        Unreal</h5><br>
+                    <p>Mixed and Mastered</p><br>
+                </div>
+            </div>
+
+            <div class="audio-engineer-tile">
+                <div class="ae-cover-art" onmouseover="showCredit('finkle-text')" onmouseout="hideCredit('finkle-text')" >
+                    <a href="https://tidal.com/browse/album/358962777/u" target="_blank"><img id="finkle" src="finkle.jpg"></a>
+                </div>
+
+                <div class="ae-credits-text" id="finkle-text">
+                    <h5>SAM FINKLE <br>
+                        Finkle's World</h5><br>
+                    <p>Mixed and Mastered</p><br>
+                </div>
+            </div>
+
+            <div class="audio-engineer-tile">
+                <div class="ae-cover-art" onmouseover="showCredit('ss-text')" onmouseout="hideCredit('ss-text')" >
+                    <a href="https://tidal.com/browse/album/172850765/u" target="_blank"><img id="finkle" src="swansong.jpg"></a>
+                </div>
+
+                <div class="ae-credits-text" id="ss-text">
+                    <h5>PROJECT: SWAN SONG <br>
+                        A Word To Come</h5><br>
+                    <p>Mixed and Mastered</p><br>
+                </div>
+            </div>
+
+
+
+        </div>
+        
+    </div>
+
+<!-- AE SERVICES -->
+
+    <div id="ae-services">
+
+        <div class="ae-services-tile" id="mixing" onmouseover="showGear('mixer')" onmouseout="hideGear('mixer')">
+
+            <h3><img src="mixer.png" id="mixer" class="ae-sprite"> Mixing</h3><br>
+            <p>Designing audio assets for interactive audio is a very involved process that can be done in several different ways. I use everything from synthesis to Foley performance and field recording to achieve the aesthetic vision required for any project. Be it stylised 8-bit synth patches or precise recordings, I have the tools and contacts needed for any design challenge.</p>
+
+        </div>
+
+        <div class="ae-services-tile" id="mastering" onmouseover="showGear('speaker')" onmouseout="hideGear('speaker')">
+
+            <h3><img src="speaker.png" id="speaker" class="ae-sprite"> Mastering</h3><br>
+            <p>With so many tools, engines and languages available to us, audio implementation can often be a confusing process. I’m very confident in using most game engines on the market with any audio middleware in order to design systems and implement audio assets. I have a strong grasp of blueprints and MetaSounds, as well as a basic grasp of C# and C++, allowing me to work with programmers to design bespoke solutions for your project.</p>
+
+
+        </div>
+
+        <div class="ae-services-tile" id="production" onmouseover="showGear('keyboard')" onmouseout="hideGear('keyboard')">
+
+            <h3><img src="keyboard.png" id="keyboard" class="ae-sprite"> Production</h3><br>
+            <p>In order to make your game stand out, using library assets is usually not good enough. I have been gathering personal recordings for years, and I’m always happy to go out and create and manage a custom library for your project.</p>
+
+        </div>
+
+        <div class="ae-services-tile" id="recording" onmouseover="showGear('microphone')" onmouseout="hideGear('microphone')">
+
+            <h3><img src="microphone.png" id="microphone" class="ae-sprite"> Recording</h3><br>
+            <p>In order to make your game stand out, using library assets is usually not good enough. I have been gathering personal recordings for years, and I’m always happy to go out and create and manage a custom library for your project.</p>
+
+        </div>
+        
+    </div>
+
+<!-- AE ABOUT -->
+
+    <div id="ae-about">
+
+        <div class="intro-item">
+        <img id="intro-pic" src="jj-cropped-1.jpg">
+        </div>
+
+        <div class="intro-item">
+        
+            <p><br>
+                Coming from a musical background, I’ve run the gambit when it comes to audio engineering. I’ve worked extensively as a live sound engineer, recording engineer, producer, mixing engineer and mastering engineer.<br><br>
+
+Working out of my personal studio in Brighton with a wide network of studios, producers, engineers, and artists, I have all the tools needed to facilitate any stage of music production. My goal is to support bands, artists, and producers and demystify the technical aspects of music production.<br><br>
+
+I strongly believe that relationships and collaboration are at the heart of any artistic endeavour. As such, I strive to build a welcoming, inclusive, and safe environment where art can flourish.<br><br>
+
+I will tailor my services and prices to your project. Please get in touch, especially if you’re funding your own project, and we can find a solution that works best for you.<br><br>
+
+            </p>
+                
+        </div>
+        
+    </div>
+
+</div>
+    
+</body>
+</html>
